@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library App</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>My Library</h1>
+    <button id="newBookBtn">New Book</button>
+  </header>
+
+  <main>
+    <div id="library" class="library-grid"></div>
+  </main>
+
+  <dialog id="bookFormDialog">
+    <form id="bookForm">
+      <h2>Add New Book</h2>
+
+      <label>
+        Title:
+        <input type="text" name="title" required />
+      </label>
+
+      <label>
+        Author:
+        <input type="text" name="author" required />
+      </label>
+
+      <label>
+        Pages:
+        <input type="number" name="pages" min="1" required />
+      </label>
+
+      <label>
+        Read:
+        <input type="checkbox" name="read" />
+      </label>
+
+      <div class="form-buttons">
+        <button type="submit">Add Book</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div>
+<footer>
+  Created by <a href="https://github.com/hussein-salim25" target="_blank">Hussein Salim</a> for Odin Projects
+</footer>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
